@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    background: rgb(97,41,122);
+    background: linear-gradient(0deg, rgb(36, 0, 53) 9%, rgb(6, 0, 12) 100%);
+}
+.card{
+    background-color: white;
+    height:400px;
+    width:300px;
+    margin:0 auto;
+    border-radius: 1em;
+}
