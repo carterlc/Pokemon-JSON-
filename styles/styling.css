@@ -36,7 +36,6 @@ body {
     left: -40%;
     top: -25%;
     animation: rotate 2s infinite linear;
-
 }
 
 @keyframes rotate {
@@ -54,10 +53,17 @@ body {
     border-radius: 1em;
     top:1.35%;
     left:1.7%;
-
 }
 
 .card:hover{
     transform:translateY(-30px);
     box-shadow: 0px 30px 25px rgba(0, 0, 0, 0.681);
+}
+h1{
+    z-index: 12;
+    position: relative;
+}
+
+h1::before{
+    display: none;
 }
