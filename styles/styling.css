@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(97, 41, 122);
     background: linear-gradient(0deg, rgb(36, 0, 53) 9%, rgb(6, 0, 12) 100%);
 }
@@ -59,11 +59,23 @@ body {
     transform:translateY(-30px);
     box-shadow: 0px 30px 25px rgba(0, 0, 0, 0.681);
 }
-h1{
+h1, p, img, .info{
     z-index: 12;
     position: relative;
 }
 
-h1::before{
+ h1::before {
+    display: none;
+}
+
+p::before {
+    display: none;
+}
+
+img::before {
+    display: none;
+}
+
+.info::before {
     display: none;
 }
