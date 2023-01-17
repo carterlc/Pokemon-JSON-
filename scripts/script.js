@@ -10,15 +10,15 @@ html += `
         <h1>
         ${data.pokemon[i].num} - ${data.pokemon[i].name}
         </h1>
-
-    <img src="${data.pokemon[i].img}" alt="pokemon image">
-    <p>Height:${data.pokemon[i].height}
-    Weight:${data.pokemon[i].weight}</p>
+    <div class="img-border">
+        <img class="pokemon" src="${data.pokemon[i].img}" alt="pokemon image">
+        <p class="size">Height:${data.pokemon[i].height} Weight:${data.pokemon[i].weight}</p>
+    </div>  
     <div class="stats">
-    <p>Type: ${data.pokemon[i].type}</p>
-    <p>Weaknesses: ${data.pokemon[i].weaknesses}</p>
-    <p>Spawn chance: ${data.pokemon[i].spawn_chance}</p>
-    </div>
+            <p><strong>Type:</strong><span class="right"> ${data.pokemon[i].type}</span></p>
+            <p><strong>Weaknesses:</strong><span class="right">${data.pokemon[i].weaknesses}</span></p>
+            <p><strong>Spawn chance:</strong> <span class="right">${data.pokemon[i].spawn_chance}</span></p>
+        </div>
     </div>
 </div>
 <div class = "faq">
