@@ -27,6 +27,45 @@ body {
 }
 .card-info{
     margin:1.5em;
+
+}
+.card h1{
+    font-size: 1.5rem;
+}
+.card h2{
+    font-size:.9rem;
+}
+span.right{
+    float:right;
+}
+.card p:nth-child(2){
+    border-top-style: solid;
+    padding-top: .6em;
+    margin-top:1.2em;
+}
+.card p:nth-child(3){
+    border-top-style: solid;
+    padding-top: .6em;
+    margin-top:1.2em;
+}
+.img-border{
+    border-style:ridge;
+    background-color: rgb(255, 255, 255);
+    background-image:url("../assets/pokemon_background.jpg");
+
+}
+img.pokemon{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    min-width:8em;
+}
+p.size{
+    text-align: center;
+    background-color:rgb(221, 221, 221);
+    border-style:inset;
+    margin:0;
+    font-size: .8rem;
 }
 .card ::before {
     content: "";
@@ -36,7 +75,7 @@ body {
     position: absolute;
     left: -50%;
     top: 40%;
-    animation: rotate 2s infinite linear;
+    animation: rotate 4s infinite linear;
 }
 
 @keyframes rotate {
@@ -61,7 +100,7 @@ body {
 }
 
 
-h1, p, img, .info{
+h1, p, img, .info, .img-border, h2, span, strong{
     z-index: 12;
     position: relative;
 }
@@ -81,8 +120,21 @@ img::before {
 .info::before {
     display: none;
 }
+.img-border::before{
+    display:none;
+}
+h2::before{
+    display:none;
+}
+span::before{
+    display:none;
+}
+strong::before{
+    display:none;
+}
 .faq{
     position: fixed;
     bottom:5%;
     background-color: rgb(255, 255, 255);
 }
+
