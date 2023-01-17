@@ -20,9 +20,8 @@ html += `
             <p><strong>Spawn chance:</strong> <span class="right">${data.pokemon[i].spawn_chance}</span></p>
         </div>
     </div>
-</div>
-<div class = "faq">
-<h1>Pokemon Facts</h1>`;
+</div>`
+
 
 let TotalHeight = 0;
 let AvgHeight = 0;
@@ -59,10 +58,14 @@ AvgSpawns = TotalSpawns / data.pokemon.length;
 AvgSpawns = Math.round(AvgSpawns);
 
 html += `
-<p> ${AvgHeight}
-<p> ${AvgWeight}
-<p> ${AvgSpawns}
-`
+<div class = "fact-border">
+    <div class = "facts">
+        <h1>Pokemon Facts</h1>
+        <p><strong>Average height of all pokemon:</strong><span class = "right">${AvgHeight} m</span></p>
+        <p><strong>Average weight of all pokemon:</strong><span class = "right">${AvgWeight} kg</span></p>
+        <p><strong>Average spawns of all pokemon:</strong><span class = "right">${AvgSpawns}</span></p>
+    </div>
+</div>`;
 
 
 output.innerHTML = html;
