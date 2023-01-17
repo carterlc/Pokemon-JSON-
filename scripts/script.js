@@ -35,19 +35,33 @@ let AvgSpawns = 0;
 
 for (let i = 0; i < data.pokemon.length; i++) {
     //Add up the total damage to calculate the average damage across all pokemon
-    TotalHeight += data.pokemon[i].height;
-    TotalWeight += data.pokemon[i].weight;
-    TotalSpawns += data.pokemon[i].spawn_time;
+    //replace meters from the json string
+    let withoutm = 0;
+    withoutm = data.pokemon[i].height.replace("m","");
+    withoutm = withoutm.trim();
+    TotalHeight += parseFloat(withoutm);
 
+    //replace kg from the json string data
+    let withoutkg;
+    withoutkg = data.pokemon[i].weight.replace("kg","");
+    withoutkg = withoutkg.trim();
+    TotalWeight += parseFloat(withoutkg);
+    //spawns is whole int so no conversions neccessary
+    TotalSpawns += data.pokemon[i].avg_spawns;
 }
-
+//output the calculations
 AvgHeight = TotalHeight / data.pokemon.length;
+//make the int only 2 decimals long
+AvgHeight = AvgHeight.toFixed(2);
 AvgWeight = TotalWeight / data.pokemon.length;
+AvgWeight = AvgWeight.toFixed(2);
 AvgSpawns = TotalSpawns / data.pokemon.length;
+AvgSpawns = Math.round(AvgSpawns);
 
 html += `
 <p> ${AvgHeight}
 <p> ${AvgWeight}
+<p> ${AvgSpawns}
 `
 
 
