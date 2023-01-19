@@ -1,4 +1,4 @@
-# Pokemon-JSON
+# Pokemon JSON data
 This is an school assignment from our Web Authoring 5 class (MULT213). I used Pokemon data from a JSON file and parsed it into JavaScript to then display pokemon statistics and facts in a fun, unique way!
 
 # Instructions
@@ -10,8 +10,8 @@ This is an school assignment from our Web Authoring 5 class (MULT213). I used Po
 3. Create an HTML file that includes a "div" element with an "id" attribute. (See starter code below.)
 4. Create a new JavaScript file and imports the JSON data. (See starter code below.)
 5. Iterate over the data and build a string of HTML that displays the data in a structured format.
-  * This format could be a list, table, paragraphs, etc. Whatever you think makes the data looks best.
-  * You must include all of the information provided to you in the JSON for each item.
+This format could be a list, table, paragraphs, etc. Whatever you think makes the data looks best.
+You must include all of the information provided to you in the JSON for each item.
 6. Use the innerHTML property to insert the HTML string into the "div" element on the HTML page.
 7. Test the program by running a local web server (or uploading to your own web server) and opening the HTML file in a web browser.
 
