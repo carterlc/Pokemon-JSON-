@@ -133,9 +133,7 @@ span::before{
 strong::before{
     display:none;
 }
-*::before {
-    display: none;
-}
+
 
 .fact-border{
     background-color: rgb(255, 255, 255);
