@@ -134,7 +134,6 @@ strong::before{
     display:none;
 }
 
-
 .fact-border{
     background-color: rgb(255, 255, 255);
     border-style:double;
@@ -146,4 +145,13 @@ strong::before{
 .fact-border h1 {
     text-align: center;
     font-size: 2.5em;
+}
+
+#generate-pokemon {
+    margin-bottom: 5rem;
+    background-color: #ffcb05;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 600;
 }
